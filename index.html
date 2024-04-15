@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Isekai Personality Test for the Internet, by Wes, Stag, and Brian for the April 2024 Codedex Monthly Challenge">
+        <title>What Anime Universe Would You Be Isekai&apos;d Into ???</title>
+        <meta name="keywords" content="Anime, personality, test, universe, shows, TV, Japan, Weeb, art, web development, writing">
+        
+        <!--Montserrat Font Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+        <!--Jersey 10 Charted Font Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&display=swap" rel="stylesheet">
+
+        <!--CSS Style Sheet Custom-->
+        <link rel="stylesheet" href="personality.css">
+    </head>
+
+    <body>
+        <div class="quiz-container">
+            <div class="intro question active">
+                <div class="content">
+                    <p>Welcome to the Isekai-Verse, I&apos;m your guide to the next world...</p>
+                    <p>Answer the following questions truthfully, as you won&apos;t be able to return to a previous question...</p>
+                    <p>Click next when you are ready...</p>
+                </div>
+                <br><br>
+                <div class="loadBars">
+                    <span class="loadBar"></span>
+                    <span class="loadBar"></span>
+                    <span class="loadBar"></span>
+                    <span class="loadBar"></span>
+                    <span class="loadBar"></span>
+                </div>
+            </div>
+            <div class="question">
+                <div class="content">
+                    <p>If you were stranded on an island, what item would you want to have with you?</p>
+                </div>
+                <div class="answers">
+                    <label class="container">Answer Choice One
+                        <input type="radio" checked="checked" name="radio" value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container">Answer Choice Two
+                        <input type="radio" name="radio" value="2">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container">Answer Choice Three
+                        <input type="radio" name="radio" value="3">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container">Answer Choice Four
+                        <input type="radio" name="radio" value="4">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <div class="content">
+                    <p>How are you doing?</p>
+                </div>
+                <div class="answers">
+                    <label class="container">Answer Choice One
+                        <input type="radio" checked="checked" name="radio" value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container">Answer Choice Two
+                        <input type="radio" name="radio" value="2">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container">Answer Choice Three
+                        <input type="radio" name="radio" value="3">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container">Answer Choice Four
+                        <input type="radio" name="radio" value="4">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <div class="content">
+                    <p>What are you doing?</p>
+                </div>
+                <div class="answers">
+                    <label class="container">Answer Choice One
+                        <input type="radio" checked="checked" name="radio" value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container">Answer Choice Two
+                        <input type="radio" name="radio" value="2">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container">Answer Choice Three
+                        <input type="radio" name="radio" value="3">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container">Answer Choice Four
+                        <input type="radio" name="radio" value="4">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="question">
+                <div class="content">
+                    <p>How are you unalived?</p>
+                </div>
+                <div class="answers">
+                    <label class="container">Answer Choice One
+                        <input type="radio" checked="checked" name="radio" value="1">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container">Answer Choice Two
+                        <input type="radio" name="radio" value="2">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container">Answer Choice Three
+                        <input type="radio" name="radio" value="3">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container">Answer Choice Four
+                        <input type="radio" name="radio" value="4">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="loading">
+                <p>Loading your results!</p>
+                <div class="loadBars">
+                    <span class="loadBar"></span>
+                    <span class="loadBar"></span>
+                    <span class="loadBar"></span>
+                    <span class="loadBar"></span>
+                    <span class="loadBar"></span>
+                </div>
+            </div>
+            <button id="nextButton">Next</button>
+        </div>
+        
+
+        <script src="isekai.js"></script>
+    </body>    
+</html>
