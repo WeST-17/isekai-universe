@@ -7,15 +7,10 @@
         <title>What Anime Universe Would You Be Isekai&apos;d Into ???</title>
         <meta name="keywords" content="Anime, personality, test, universe, shows, TV, Japan, Weeb, art, web development, writing">
         
-        <!--Montserrat Font Google Fonts-->
+        <!--Jersey 20 Font Google Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap" rel="stylesheet">
-
-        <!--Jersey 10 Charted Font Google Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
 
         <!--CSS Style Sheet Custom-->
         <link rel="stylesheet" href="personality.css">
@@ -23,69 +18,76 @@
 
     <body>
         <div class="quiz-container">
+            <div class="bg"></div>
             <div class="intro question active">
                 <div class="content">
-                    <p>Welcome to the Isekai-Verse, I&apos;m your guide to the next world...</p>
-                    <p>Answer the following questions truthfully, as you won&apos;t be able to return to a previous question...</p>
-                    <p>Click next when you are ready...</p>
+                    <p class="fadeIn">Welcome to the Isekai-Verse, I&apos;m your guide to the next world...</p>
+                    <p class="fadeInTwo">Answer the following questions truthfully, as you won&apos;t be able to return to a previous question...</p>
+                    <p class="fadeInThree">Are you ready?</p>
                 </div>
-                <br><br>
-                <div class="loadBars">
+                <div class="loadBars fadeOut">
                     <span class="loadBar"></span>
                     <span class="loadBar"></span>
                     <span class="loadBar"></span>
                     <span class="loadBar"></span>
                     <span class="loadBar"></span>
                 </div>
-            </div>
-            <div class="question">
-                <div class="content">
-                    <p>If you were stranded on an island, what item would you want to have with you?</p>
-                </div>
-                <div class="answers">
-                    <label class="container">Answer Choice One
-                        <input type="radio" checked="checked" name="radio" value="1">
-                        <span class="checkmark"></span>
-                    </label>
-                    
-                    <label class="container">Answer Choice Two
-                        <input type="radio" name="radio" value="2">
-                        <span class="checkmark"></span>
-                    </label>
-                    
-                    <label class="container">Answer Choice Three
-                        <input type="radio" name="radio" value="3">
-                        <span class="checkmark"></span>
-                    </label>
-                    
-                    <label class="container">Answer Choice Four
-                        <input type="radio" name="radio" value="4">
-                        <span class="checkmark"></span>
-                    </label>
+                <div class="info">
+                    <a href="https://www.codedex.io/community/monthly-challenge/april-2024" target="_blank">
+                        <p>Created for the Codedex April 2024 Coding Challenge!</p>
+                    </a>
+                    <p>Made by wes | stag | bwin</p>
                 </div>
             </div>
-            <div class="question">
+            
+            <div class="question" id="1">
                 <div class="content">
-                    <p>How are you doing?</p>
+                    <p>Danger lurks around the corner. Your first response is...</p>
                 </div>
                 <div class="answers">
-                    <label class="container">Answer Choice One
-                        <input type="radio" checked="checked" name="radio" value="1">
+                    <label class="container">Finally! A Worthy Opponent!
+                        <input type="radio" checked="checked" name="radio" value="Hero">
                         <span class="checkmark"></span>
                     </label>
                     
-                    <label class="container">Answer Choice Two
-                        <input type="radio" name="radio" value="2">
+                    <label class="container">Wait a bit and come up with a plan.
+                        <input type="radio" name="radio" value="Protagonist">
                         <span class="checkmark"></span>
                     </label>
                     
-                    <label class="container">Answer Choice Three
-                        <input type="radio" name="radio" value="3">
+                    <label class="container">EEEK, book it out of there!
+                        <input type="radio" name="radio" value="Side Character">
                         <span class="checkmark"></span>
                     </label>
                     
-                    <label class="container">Answer Choice Four
-                        <input type="radio" name="radio" value="4">
+                    <label class="container">Screw it, whatever happens happens...
+                        <input type="radio" name="radio" value="Villain">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="question" id="2">
+                <div class="content">
+                    <p>You&apos;re walking past a mirror, and you...</p>
+                </div>
+                <div class="answers">
+                    <label class="container">Stop for a minute to check yourself out.
+                        <input type="radio" checked="checked" name="radio" value="Anti-Hero">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container">Notic a smudge in the very corner, how annoying...
+                        <input type="radio" name="radio" value="Comic Relief">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container">Walk right on by.
+                        <input type="radio" name="radio" value="Village NPC">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="container">Say "Bloody Mary" 3 times...
+                        <input type="radio" name="radio" value="Villain">
                         <span class="checkmark"></span>
                     </label>
                 </div>
@@ -143,7 +145,7 @@
                 </div>
             </div>
             <div class="loading">
-                <p>Loading your results!</p>
+                <p>Compiling your results!</p>
                 <div class="loadBars">
                     <span class="loadBar"></span>
                     <span class="loadBar"></span>
@@ -152,7 +154,8 @@
                     <span class="loadBar"></span>
                 </div>
             </div>
-            <button id="nextButton">Next</button>
+            <br>
+            <button class='fadeInThree' id="nextButton">Next</button>
         </div>
         
 
