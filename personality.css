@@ -261,25 +261,26 @@ img {
 
 a.codedex {
     width: 200px;
-    align-self: start;
+    margin: 10px;
+    align-self: center;
     position: relative;
     font-size: large;
-    transform: translateY(-40px);
+    transform: translateY(-40px) translateX(17px);
 }
 
 button.share {
     width: 200px;
     margin: 10px;
-    align-self: start;
+    align-self: center;
     position: relative;
     font-size: large;
-    transform: translateY(70px);
+    transform: translateY(20px);
 }
 
 .popup {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
-    align-self: start;
+    align-self: center;
     font-size: large;
     background-color: purple;
     text-align: center;
@@ -289,12 +290,12 @@ button.share {
     width: 200px;
     height: 30px;
     border-radius: 5px;
-    transform: translateY(10px);
+    transform: translateY(-30px);
     transition: transform 0.5s ease-in-out;
 }
 
 .popup.pop {
-    transform: translateY(-30px);
+    transform: translateY(-90px);
 }
 
 /* Checkbox for answers css */
