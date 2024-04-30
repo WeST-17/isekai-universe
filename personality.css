@@ -251,6 +251,7 @@ button.share {
     position: relative;
     font-size: large;
     transform: translateY(20px);
+    z-index: 1001;
 }
 
 .popup {
