@@ -16,7 +16,7 @@ imgElement.src = imgUrl;
 
 // Define the share function
 function share() {
-    const url = document.location.origin;
+    const url = 'https://west-17.github.io/isekai-universe';
     const popup = document.querySelector('.popup');
 
     // Use the Clipboard API to copy the URL to the clipboard
