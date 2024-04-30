@@ -9,7 +9,7 @@ if (storedPersonality === 'NPC' || storedPersonality === 'Hero') {
     randomNum = Math.floor(Math.random()*4 + 1);
 }
 
-// Set img url
+// Set img url need isekai universe text
 const imgUrl = `/isekai-universe/images/${storedPersonality}/${randomNum}.png`;
 const imgElement = document.querySelector('img');
 imgElement.src = imgUrl;
