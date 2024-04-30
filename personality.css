@@ -12,7 +12,7 @@ html {
 body {
     font-family: 'Jersey 20', sans-serif;
     font-weight: 50;
-    background-image: linear-gradient(45deg, #4c1d95, #a855f7, #a797e5);
+    background-image: linear-gradient(8deg, #6a0d83, #ce4993, #ee5d6c, #fb9062, #eeaf61);
     background-size: 300%;
     animation: bg-animate 5s infinite;
     display: flex;
@@ -121,7 +121,7 @@ a p:hover {
     flex-direction: column;
     justify-content: center;
     width: 85%;
-    height: 95%;
+    height: auto;
     position: relative;
     overflow-x: hidden;
     transition: transform 1s ease-in-out;
@@ -244,21 +244,6 @@ img {
     z-index: 100;
 }
 
-.socials {
-    position: absolute;
-    font-size: medium;
-    text-align: end;
-    display: block;
-    width: 40%;
-    align-items: end;
-    z-index: 100;
-    bottom: 20px;
-    right: 60px;
-    padding: 5px;
-    color: white;
-    border-radius: 0.25rem;
-}
-
 a.codedex {
     width: 200px;
     margin: 10px;
@@ -376,9 +361,15 @@ button.share {
 }
 
 .socials {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    font-size: small;
+    text-align: center;
+    margin: 10px;
+    z-index: 1000;
+}
+
+.copy {
+    font-size: small;
+    text-align: center;
     margin: 10px;
 }
 

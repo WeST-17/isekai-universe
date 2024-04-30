@@ -11,7 +11,6 @@ let score = {
     "ComicRelief": 0,
     "NPC": 0,
     "AntiHero": 0,
-    "Lover": 0
 };
 
 // Character images in the images folder.
@@ -36,7 +35,7 @@ const questionContent = [
     {
         question: "You stumble upon a stranger in need of help. Your first thought is: ",
         choices: ["Let's help them", "Are they scamming me?", "None of my business...", "Maybe I'll be rewarded"],
-        values: ["Lover", "SideCharacter", "NPC", "AntiHero"]
+        values: ["Protagonist", "SideCharacter", "NPC", "AntiHero"]
     },
     {
         question: "You're walking past a mirror, and you...",
@@ -51,7 +50,7 @@ const questionContent = [
     {
         question: "You need some time alone. Where do you go?",
         choices: ["A quiet and empty library", "Under the shadow of a tree", "Locked in my own room", "Go for a drive"],
-        values: ["Lover", "NPC", "Villain", "Protagonist"]
+        values: ["SideCharacter", "NPC", "Villain", "Protagonist"]
     },
     {
         question: "You need to finish up that favor your friend asked of you last week, but there's an assignment due today. What now?",
@@ -61,12 +60,12 @@ const questionContent = [
     {
         question: "You're on your bed, just staring at the ceiling. What do you do next?",
         choices: ["zzz", "Think about life", "Get up and do something productive", "Browse social media for a few hours"],
-        values: ["NPC", "Protagonist", "Hero", "Lover"]
+        values: ["NPC", "Protagonist", "Hero", "NPC"]
     },
     {
         question: "Looks like someone lost their wedding ring. You take a closer look and see that it seems to be made of diamond! What do you do now?",
         choices: ["I guess I'm rich", "Take it to a lost and found", "Attempt to locate the owner", "Leave it"],
-        values: ["AntiHero", "Protagonist", "Lover", "NPC"]
+        values: ["AntiHero", "Protagonist", "Hero", "NPC"]
     },
     {
         question: "You just woke up in a new world. What moral code do you follow?",
@@ -76,7 +75,7 @@ const questionContent = [
     {
         question: "Finally, how would you go about forming relationships in this new world?",
         choices: ["Find the nearest waifu / husbando and bark 😅", "What are friends? I ride solo", "Just let it happen naturally. I'm sure it'll work out", "Might be risky, I want to learn more about this world first"],
-        values: ["ComicRelief", "AntiHero", "Lover", "SideCharacter"]
+        values: ["ComicRelief", "AntiHero", "Protagonist", "SideCharacter"]
     },
 ];
 

@@ -5,12 +5,12 @@ const shareButton = document.querySelector('.share');
 const storedPersonality = JSON.parse(window.sessionStorage.getItem('personality'));
 
 let randomNum = Math.floor(Math.random()*3 + 1);
-if (storedPersonality === 'NPC') {
+if (storedPersonality === 'NPC' || storedPersonality === 'Hero') {
     randomNum = Math.floor(Math.random()*4 + 1);
 }
 
 // Set img url
-const imgUrl = `/isekai-universe/images/${storedPersonality}/${randomNum}.png`;
+const imgUrl = `/images/${storedPersonality}/${randomNum}.png`;
 const imgElement = document.querySelector('img');
 imgElement.src = imgUrl;
 
@@ -18,7 +18,6 @@ imgElement.src = imgUrl;
 function share() {
     const url = document.location.origin;
     const popup = document.querySelector('.popup');
-
 
     // Use the Clipboard API to copy the URL to the clipboard
     navigator.clipboard.writeText(url).then(function() {
