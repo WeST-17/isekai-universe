@@ -97,7 +97,7 @@ questionContent.forEach((q) => {
     questionElement.classList.add('question');
     questionElement.innerHTML = `
         <div class='${ranImg}'>
-            <img src='/images/characters/${characters[randomNum]}.png' />
+            <img src='/isekai-universe/images/characters/${characters[randomNum]}.png' />
         </div>
         <p>${q.question}</p>
         <div class='content'>

@@ -10,7 +10,7 @@ if (storedPersonality === 'NPC') {
 }
 
 // Set img url
-const imgUrl = `/images/${storedPersonality}/${randomNum}.png`;
+const imgUrl = `/isekai-universe/images/${storedPersonality}/${randomNum}.png`;
 const imgElement = document.querySelector('img');
 imgElement.src = imgUrl;
 
