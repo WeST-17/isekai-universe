@@ -219,7 +219,7 @@ button:hover {
     height: 40px;
     width: auto;
     margin: 15px;
-    transform: translateY(-70px);
+    transform: translateY(-20px);
 }
 
 .result {
